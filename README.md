@@ -24,18 +24,11 @@
 
 ## What this is
 
-In 2022, [@ExplainThisBob](https://twitter.com) was a small agent that took
-a messy problem and handed back a real breakdown of it — no lecture, no
-hedging, just the steps. It got shut down after being misused for racism.
+I built Explain This Bob as a small, focused agent that takes a messy problem and hands back a real breakdown of it — no lecture, no hedging, just the steps.
 
-Explain This Bob is the same idea, rebuilt from scratch as an open-source CLI: a
-focused agent with one job. You give it a problem, it gives you back a
-short, ordered breakdown you can actually act on — the real problem
-stated plainly, the steps to solve it, the step most likely to trip you
-up, and the one thing to do next.
+It is an open-source CLI with one job. You give it a problem, it gives you back a short, ordered breakdown you can actually act on — the real problem stated plainly, the steps to solve it, the step most likely to trip you up, and the one thing to do next.
 
-It is not a general chatbot. It doesn't do small talk, it doesn't hedge,
-and it won't write you an essay when three sentences will do.
+It is not a general chatbot. It doesn't do small talk, it doesn't hedge, and it won't write you an essay when three sentences will do.
 
 ## See it in action
 
