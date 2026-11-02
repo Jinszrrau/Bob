@@ -1,10 +1,10 @@
 # Example run
 
 ```
-$ bob "our checkout page converts fine on desktop but tanks on mobile, and I don't know if it's speed, layout, or the payment step"
+$ gentleman "our checkout page converts fine on desktop but tanks on mobile, and I don't know if it's speed, layout, or the payment step"
 ```
 
-Bob's response:
+Gentleman's response:
 
 ```
 The problem: you have three suspects and no evidence pointing at any one

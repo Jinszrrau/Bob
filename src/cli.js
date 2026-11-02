@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import "dotenv/config";
-import { Bob } from "./bob.js";
+import { Gentleman } from "./gentleman.js";
 
 const RESET = "\x1b[0m";
 const GREEN = "\x1b[32m";
@@ -9,12 +9,12 @@ const BOLD = "\x1b[1m";
 
 function printHelp() {
   console.log(`
-${BOLD}bob${RESET} — hand Bob a problem, get a breakdown back.
+${BOLD}gentleman${RESET} — hand Gentleman a problem, get a breakdown back.
 
 ${BOLD}Usage${RESET}
-  bob "your problem here"
-  bob --model gpt-4.1-mini "quick and cheap version"
-  echo "your problem" | bob
+  gentleman "your problem here"
+  gentleman --model gpt-4.1-mini "quick and cheap version"
+  echo "your problem" | gentleman
 
 ${BOLD}Options${RESET}
   --model <id>   Model to use (default: gpt-4.1-mini)
@@ -72,21 +72,21 @@ async function main() {
     return;
   }
 
-  const bob = new Bob({ model });
+  const gentleman = new Gentleman({ model });
 
-  console.log(`${DIM}Bob is looking at it...${RESET}\n`);
+  console.log(`${DIM}Gentleman is looking at it...${RESET}\n`);
 
   try {
     if (stream) {
       process.stdout.write(GREEN);
-      await bob.breakdownStream(problem, (chunk) => process.stdout.write(chunk));
+      await gentleman.breakdownStream(problem, (chunk) => process.stdout.write(chunk));
       process.stdout.write(RESET + "\n");
     } else {
-      const result = await bob.breakdown(problem);
+      const result = await gentleman.breakdown(problem);
       console.log(GREEN + result + RESET);
     }
   } catch (err) {
-    console.error(`${BOLD}Bob hit an error:${RESET} ${err.message}`);
+    console.error(`${BOLD}Gentleman hit an error:${RESET} ${err.message}`);
     process.exitCode = 1;
   }
 }

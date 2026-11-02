@@ -1,12 +1,12 @@
 {
-  "name": "explain-this-bob",
+  "name": "gentleman",
   "version": "1.0.0",
-  "description": "Bob breaks your problem down into steps you can actually act on.",
+  "description": "Gentleman breaks your problem down into steps you can actually act on.",
   "type": "module",
   "bin": {
-    "bob": "./src/cli.js"
+    "gentleman": "./src/cli.js"
   },
-  "main": "./src/bob.js",
+  "main": "./src/gentleman.js",
   "scripts": {
     "start": "node src/cli.js",
     "test": "node --test tests/"
