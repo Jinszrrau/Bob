@@ -8,8 +8,7 @@
 
 
 
-<div align="center">
-  <img src="assets/bob-logo.png" alt="Bob" width="140" />
+
 
   # Explain This Bob
 
